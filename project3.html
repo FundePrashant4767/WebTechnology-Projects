@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content{
+            height: 450px;
+            width: 650px;
+            border: 10px solid rgb(rgb(230, 249, 18), rgb(102, 155, 102), rgb(113, 113, 201));
+            border-radius: 30% 30%  30% 30%;
+            box-shadow: 5px 5px 5px 5px black;
+            background-color: rgb(32, 36, 36);
+            background-image: url(./backgraound.jpg);
+            margin: 0 auto;
+        }
+        p{
+            color: black;
+            margin-top: 80px;
+            margin-left: 150px;
+        }
+        h1{
+            color: black;
+            margin-top: -40pxpx;
+            margin-left: 150px;
+        }
+        #content1{
+            color: black;
+            margin-left: 150px;
+            
+        }
+        #button{
+            border-radius: 2% 2% 2% 2%;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+    <div id="content">
+        <p>MARCH 01, 2023</p>
+        <h1>Join the event</h1>
+        <table id="content1">
+            <tr>
+                <td>First Name </td>
+                <td>Last Name</td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Enter your first name"></td>
+                <td><input type="text" placeholder="Enter your last name"></td>
+            </tr>
+            <tr>
+                <td>Buisness Email</td>
+                <td>Title</td>
+            </tr>
+            <tr>
+                <td><input type="email" placeholder="Enter your email"></td>
+                <td><input type="text" placeholder="Enter your job title?"></td>
+            </tr>
+            <tr>
+                <td>Company Name</td>
+                <td>Company size</td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Where do you work?"></td>
+                <td><select name="" id="">
+                    <option value="" disabled selected>Select</option>
+                    <option value="">100-200</option>
+                    <option value="">200-400</option>
+                    <option value="">400-600</option>
+                    <option value="">600-800</option>
+                    <option value="">800-1000</option>
+                    <option value="">>1000</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td colspan="2">What are you hoping tolearn about?</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td colspan="2"><textarea name="" id="" cols="45" rows="5" placeholder="Message"></textarea></td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox">I would like to receive emails about future webinars</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td colspan="2" id="button"><input type="submit" value="Regster for this event"></td>
+                <!-- <td></td> -->
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
