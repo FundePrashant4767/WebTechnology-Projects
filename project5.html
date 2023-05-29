@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoBroker</title>
+    <style>
+        body {
+            height: 740px;
+            width: 1500px;
+            background-color: rgb(253, 253, 253);
+        }
+
+        #bar {
+            height: 55px;
+            width: 1510px;
+            box-shadow: 1px 1px 4px #464646;
+            display: flex;
+        }
+
+        #nobrokerlogo {
+            height: 50px;
+            width: 200px;
+            
+            background-image: url(./NOBroker_1559754580818_1559800880044.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-left: 5px;
+        }
+
+        #bookings {
+            height: 27px;
+            width: 120px;
+            border: 1px solid rgb(204, 204, 204);
+            margin-top: 15px;
+            margin-left: 690px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #payrent {
+            height: 27px;
+            width: 95px;
+            border: 1px solid rgb(204, 204, 204);
+            margin-top: 15px;
+            margin-left: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #mb {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            text-decoration: none;
+            color: #464646;
+        }
+
+        #pr {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            text-decoration: none;
+            color: #464646;
+            margin-left: 5px;
+        }
+
+        #fpo {
+            height: 27px;
+            width: 140px;
+            border: 1px solid;
+            margin-left: 15px;
+            background-color: rgb(0, 122, 111);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        #fpotext {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            text-decoration: none;
+            color: white;
+        }
+
+        #signup {
+            height: 27px;
+            width: 60px;
+            border: 1px solid rgb(204, 204, 204);
+            border-left: none;
+            border-top: none;
+            border-bottom: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+        #signup1 {
+            text-decoration: none;
+            color: #464646;
+        }
+
+        #login1 {
+            height: 27px;
+            width: 60px;
+            border: 1px solid rgb(204, 204, 204);
+            border-left: none;
+            border-top: none;
+            border-bottom: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+        #logintext {
+            text-decoration: none;
+            color: #464646;
+        }
+
+        #menu1 {
+            height: 27px;
+            width: 120px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #menutext {
+            margin-left: 5px;
+            text-decoration: none;
+            color: #464646;
+        }
+
+        #text1 {
+            height: 30px;
+            width: 650px;
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #787676;
+            text-align: center;
+            margin-left: 425px;
+            margin-top: 60px;
+        }
+
+        .box1 {
+            height: 50px;
+            width: 310px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 30px;
+            margin-left: 595px;
+        }
+
+        .box2 {
+            height: 50px;
+            width: 155px;
+            border: 1px solid #787676;
+            background-color: rgb(252, 238, 216);
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #464646;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #RA {
+            border-top: none;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        #NDD {
+            border: none;
+        }
+
+        #cells {
+            height: 50px;
+            width: 350px;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(253, 253, 253);
+            align-items: center;
+            margin-top: 30px;
+            margin-left: 575px;
+        }
+
+        .cell1 {
+            height: 40px;
+            width: 160px;
+            border: 1px solid rgb(239, 239, 239);
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(175, 170, 170);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #Rent {
+            background-color: rgb(255, 255, 255);
+            color: rgb(253, 55, 82);
+        }
+
+        #table1 {
+            margin-left: 330px;
+            border: 1px solid rgb(239, 239, 239);
+            border-top-left-radius: 4px;
+            border-top-left-radius: 4px;
+        }
+
+        #droplist1 {
+            height: 45px;
+            width: 150px;
+            border-left: none;
+            border-top: none;
+            border-bottom: none;
+            border-right: 1px solid rgb(239, 239, 239);
+        }
+
+        #mainsearch {
+            height: 45px;
+            width: 510px;
+            border: none;
+        }
+
+        #searchbutton {
+            height: 45px;
+            width: 180px;
+            background-image: url(./searchbutton.PNG);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            color: white;
+            align-items: center;
+            border: none;
+            font-size: 25px;
+            border-top-right-radius: 4px;
+            background-color: red;
+        }
+
+        #imgcol {
+            background-color: rgb(245, 20, 50);
+            border-top-right-radius: 4px;
+
+        }
+
+        #row2 {
+            height: 40px;
+            border: 1px solid rgb(239, 239, 239);
+            font-size: 13px;
+            color: rgb(70, 70, 70);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #droplist2 {
+            height: 35px;
+            width: 155px;
+            color: rgb(138, 138, 138);
+            font-size: 11px;
+            border: 1px solid rgb(239, 239, 239);
+            margin-left: 10px;
+        }
+
+        #droplist3 {
+            height: 35px;
+            width: 155px;
+            font-size: 11px;
+            color: rgb(138, 138, 138);
+            border: 1px solid rgb(239, 239, 239);
+            margin-left: 10px;
+        }
+
+        .bl {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #btmline {
+            width: 70px;
+        }
+
+        #btmline2 {
+            width: 390px;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(70, 70, 70);
+            margin-top: 40px;
+            margin-left: 560px;
+        }
+
+        #PFPAbut {
+            height: 40px;
+            width: 200px;
+            border: none;
+            margin-top: 20px;
+            margin-left: 655px;
+            background-color: rgb(0, 122, 111);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="bar">
+                <div id="nobrokerlogo"></div>
+                <div id="bookings">
+                    <img src="https://assets.nobroker.in/nb-new/public/myBooking.svg" alt="">
+                    <a href="#" id="mb">My bookings</a>
+                </div>
+                <div id="payrent">
+                    <img src="https://assets.nobroker.in/nb-new/public/payrent.png" alt="">
+                    <a href="#" id="pr"> Pay rent</a>
+                </div>
+                <div id="fpo">
+                    <a href="#" id="fpotext">For property owners</a>
+                </div>
+                <div id="signup"><a href="#" id="signup1">Sign up</a></div>
+                <div id="login1"><a href="#" id="logintext">Log in</a></div>
+                <div id="menu1">
+                    <div><img src="https://assets.nobroker.in/nb-new/public/hamburger-menu.svg" alt=""></div>
+                    <div><a href="#" id="menutext">Menu</a></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="text1">World's Largest NoBrokerage Property Site</div>
+    <div class="box1">
+        <div class="box2" id="RA">
+            <img src="https://assets.nobroker.in/nb-new/public/Home/RAIcon.svg" alt="">
+            <div>Rental Agreement</div>
+        </div>
+        <div class="box2" id="NDD">
+            <img src="https://assets.nobroker.in/nb-new/public/Home/deliveryIcon.svg" alt="">
+            <div>Next Day Delivery</div>
+        </div>
+    </div>
+    <div id="cells">
+        <div class="cell1">Buy</div>
+        <div class="cell1" id="Rent"><b>Rent</b></div>
+        <div class="cell1">Commertial</div>
+    </div>
+    <table id="table1">
+        <tr>
+            <td id="row1">
+                <select name="" id="droplist1">
+                    <option value="" disabled selected>Banglore</option>
+                    <option value="">Mumbai</option>
+                    <option value="">Pune</option>
+                    <option value="">Chennai</option>
+                    <option value="">Gurgaon</option>
+                    <option value="">Hydrabad</option>
+                    <option value="">Delhi</option>
+                    <option value="">Noida</option>
+                    <option value="">Greater Noida</option>
+                    <option value="">Gaziabad</option>
+                    <option value="">Faridabad</option>
+                </select>
+            </td>
+            <td><input type="search" id="mainsearch" placeholder=" Search upto 3 localities or landmarks"></td>
+            <td id="imgcol"> <input type="button" id="searchbutton" value="Search">  </td>
+        </tr>
+        <tr>
+            <td id="row2" colspan="3">
+                <input type="radio">Full house
+                <input type="radio">PG/Hostel
+                <input type="radio">Flatmates
+                <select name="" id="droplist2">
+                    <option value="" disabled selected> BHK Type</option>
+                    <option value="">1 RK</option>
+                    <option value="">1 BHK</option>
+                    <option value="">2 BHK</option>
+                    <option value="">3 BHK</option>
+                    <option value="">4 BHK</option>
+                    <option value="">4+ BHK</option>
+                </select>
+                <select name="" id="droplist3">
+                    <option value="" disabled selected> Availability</option>
+                    <option value="">Immediate</option>
+                    <option value="">Within 15 days</option>
+                    <option value="">Within 30 days</option>
+                    <option value="">After 30 days</option>
+                </select>
+            </td>
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+        </tr>
+    </table>
+    <div class="bl" id="btmline2">
+        <hr class="bl" id="btmline">Are you a property owner?
+        <hr class="bl" id="btmline">
+    </div>
+    <input type="button" value="Post Free Property Ad" id="PFPAbut">
+</body>
+
+</html>
