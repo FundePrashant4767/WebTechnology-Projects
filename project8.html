@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+           height: 740px;
+           width: 1510px; 
+           background-color:rgb(255, 255, 255);
+        }
+        #backimage
+        {
+            height: 660px;
+            width: 1510px;
+            background-image: url(./adobebackimg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-sizing: border-box;
+            display: flex;
+        }
+        #bar1
+        {
+            height: 60px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+        }
+        #adobeicon
+        {
+            height: 30px;
+            width: 120px;
+            background-image:url(./Adobeicon.PNG);
+            background-position: center;
+            background-size: cover;
+            margin-top: 15px;
+            margin-left: 18px;
+        }
+        .droplist
+        {
+            height: 58px;
+            width: 180px;
+            border: none;
+            text-align:end;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #adobesearch
+        {
+            height: 30px;
+            width: 40px;
+            background-image: url(./adobesearch.PNG);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 15px;
+            margin-left: 500px;
+        }
+        #link1
+        {
+            margin-top: 20px;
+            text-decoration: none;
+            color: black;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 10px;
+        }
+        #child
+        {
+            margin-top: 180px;
+            margin-left: 80px;
+        }
+        #bigtext
+        {
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #smalltext
+        {
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #endline
+        {
+            display: flex;
+        }
+        #butlink
+        {
+            height: 32px;
+            width: 115px;
+            border-radius: 18px;
+            background-color:rgb(20, 115, 230);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #butlink:hover
+        {
+            height: 32px;
+            width: 115px;
+            border-radius: 18px;
+            background-color:rgb(13, 102, 208);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #buttext
+        {
+            text-decoration: none;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
+        #linklink
+        {
+            height: 30px;
+            width: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 17px;
+        }
+        #linktext
+        {
+            text-decoration: none;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+        #linktext:hover
+        {
+            text-decoration: underline;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div id="bar1">
+            <div id="adobeicon"></div>
+            <select name="" class="droplist">
+                <option value="" selected disabled><b>Creativity & Design</b></option>
+            </select>
+            <select name="" class="droplist">
+                <option value=""><b>PDF & E-signatures</b></option>
+            </select>
+            <select name="" class="droplist">
+                <option value=""><b>Marketing & Commerce</b></option>
+            </select>   
+            <select name="" class="droplist">
+                <option value=""><b>Help & Support</b></option>
+            </select>
+            <div id="adobesearch"></div>
+            <a id="link1" href="https://auth.services.adobe.com/en_US/index.html?callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2Fadobedotcom2%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.adobe.com%252F%2523old_hash%253D%2526from_ims%253Dtrue%253Fclient_id%253Dadobedotcom2%2526api%253Dauthorize%2526scope%253DAdobeID%252Copenid%252Cgnav%252Cread_organizations%252Cadditional_info.projectedProductContext%252Cadditional_info.roles%26state%3D%257B%2522ac%2522%253A%2522%2522%252C%2522jslibver%2522%253A%2522v2-v0.38.0-17-g633319d%2522%252C%2522nonce%2522%253A%25221868176289198419%2522%257D%26code_challenge_method%3Dplain%26use_ms_for_expiry%3Dtrue&client_id=adobedotcom2&scope=AdobeID%2Copenid%2Cgnav%2Cread_organizations%2Cadditional_info.projectedProductContext%2Cadditional_info.roles&denied_callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fdenied%2Fadobedotcom2%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.adobe.com%252F%2523old_hash%253D%2526from_ims%253Dtrue%253Fclient_id%253Dadobedotcom2%2526api%253Dauthorize%2526scope%253DAdobeID%252Copenid%252Cgnav%252Cread_organizations%252Cadditional_info.projectedProductContext%252Cadditional_info.roles%26response_type%3Dtoken%26state%3D%257B%2522ac%2522%253A%2522%2522%252C%2522jslibver%2522%253A%2522v2-v0.38.0-17-g633319d%2522%252C%2522nonce%2522%253A%25221868176289198419%2522%257D&state=%7B%22ac%22%3A%22%22%2C%22jslibver%22%3A%22v2-v0.38.0-17-g633319d%22%2C%22nonce%22%3A%221868176289198419%22%7D&relay=2c65e315-6380-4f18-983e-effdf1350f0a&locale=en_US&flow_type=token&idp_flow_type=login&s_p=google%2Cfacebook%2Capple&response_type=token#/">Sign In</a>
+          </div>
+        </nav>
+      </header>
+    <div id="backimage">
+        <div id="child">
+           <h1 id="bigtext">New in Creative Cloud.</h1>
+           <p id="smalltext">Create faster with new AI features in Illustrator, Premiere Pro, and Lightroom. <br>
+             Collaborate with Share for Review in Photoshop and Illustrator. Make standout <br>
+              content quickly with Adobe Express. And design for the future with new 3D <br>
+              tools.</p>
+              <br>
+           <div id="endline">
+            <div id="butlink"><a id="buttext" href="https://www.adobe.com/#mini-plans-web-cta-creative-cloud-card"><b>Start free trial</b></a></div>
+            <div id="linklink"><a id="linktext" href="https://www.adobe.com/creativecloud.html"><b>Explore Creative Cloud</b></a></div>
+           </div>
+        </div>
+    </div>
+</body>
+</html>
